@@ -68,7 +68,7 @@ The result object `$scope.myDateRange` has a `startDate` and `endDate` propertie
 * `ranges`: mapped from `ranges` attribute. Is a scoped object. (check daterangepicker for formatting)
 * `input`: the input field which the display string `startDate separator endDate`. If not specified, the field being used is assumed to be an input field.
 
-Example with all above features:
+Example:
 
 ```
 <form class="navbar-form">
