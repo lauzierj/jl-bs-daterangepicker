@@ -1,0 +1,35 @@
+{
+  "name": "jl-bs-daterangepicker",
+  "description": "AngularJS directive for bootstrap-daterangepicker",
+  "version": "0.0.1",
+  "filename": "./src/jl-bs-daterangepicker.js",
+  "homepage": "http://github.com/lauzierj/jl-bs-daterangepicker",
+  "author": {
+    "name": "Jacob Lauzier",
+    "email": "lauzierj@gmail.com",
+    "url": "http://github.com/luisfarzati"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lauzierj/jl-bs-daterangepicker.git"
+  },
+  "keywords": [
+    "angular",
+    "bootstrap",
+    "daterangepicker",
+    "datepicker",
+    "moment",
+    "time",
+    "interval",
+    "calendar"
+  ],
+  "bugs": {
+    "url": "http://github.com/lauzierj/jl-bs-daterangepicker/issues"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-uglify": "latest"
+  }
+}
