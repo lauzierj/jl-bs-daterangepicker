@@ -18,7 +18,14 @@
         options.separator = $attributes.separator || '-';
         options.minDate = $attributes.minDate && moment($attributes.minDate);
         options.maxDate = $attributes.maxDate && moment($attributes.maxDate);
-        options.dateLimit = $attributes.limit && moment.duration.apply(this, $attributes.limit.split(' ').map(function (elem, index) { return index === 0 && parseInt(elem, 10) || elem; }) );
+        
+        if($attributes.limit) {
+    	  if($attributes.limit.indexOf(' ') < 0)
+    	    options.dateLimit = $parse($attributes.limit)($scope);
+    	  else
+    	    options.dateLimit = moment.duration.apply(this, $attributes.limit.split(' ').map(function (elem, index) { return index === 0 && parseInt(elem, 10) || elem; }) );
+        }
+        
         options.ranges = $attributes.ranges && $parse($attributes.ranges)($scope);
         options.opens = $attributes.opens;
 
